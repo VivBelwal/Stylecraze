@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style caraze</title>
+    <style>
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+             width: 90%;
+             margin: auto;
+            position: sticky;
+        }
+        #container>img{
+            display: block;
+            margin-top: 2px;
+           margin-left: 407px;
+           margin-right: auto;
+        }
+        input[type="search"]{
+              border-radius: 20px;
+              margin-top: 5px;
+              margin-bottom: 5px;
+              margin-right: 5px;
+              font-size: 14px;
+              padding-left: 7px;
+        }
+        #ele{
+            display: flex;
+            justify-content: center;
+            width: 85%;
+            font-family: Poppins, Poppins-Hindi, sans-serif;
+            
+            margin-top: 10px;
+            margin-left: 65px;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            line-height: 22px;
+            
+        }
+        #ele>div{
+            border-right: 2px solid rgb(252, 67, 98);
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        #ele>div:last-child{
+            border:none;
+        }
+       #homeTopSection{
+        display: flex;
+        width: 93%;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 53px;
+       } 
+       #homeTopSection>div{
+        width: 100%;
+        border: .1px solid white;
+       
+        
+       }
+       #homeTopSection>div>img:hover{
+        transition: 0.5s;
+        opacity: 0.8;
+       }
+       #homeTopSection>div>img{
+        width: 100%;
+       }
+    </style>
+</head>
+<body>
+  <div id="container">
+    <img src="https://cdn2.stylecraze.com/wp-content/themes/buddyboss-child/images/sc-logo.png" alt="StyleCraze">
+    <input type="search" placeholder="Search" aria-label="Search">
+    </div>  
+    <div id="ele"></div>
+    <div id="homeTopSection">
+
+    </div>
+</body>
+<script>
+    let navElement=["MAKEUP","HAIR CARE","SKIN CARE", "HAIRSTYLES","HEALTH & WELLNESS","NEWS","SIGN IN","SIGN UP","ABOUT US"]
+    let topSection=["https://cdn2.stylecraze.com/wp-content/uploads/2019/03/How-To-Style-Converse-Shoes-With-Dresses--17-Outfit-Ideas-1.jpg.webp",
+    "https://cdn2.stylecraze.com/wp-content/uploads/2019/03/27-Cute-Summer-Date-Ideas-To-Explore-With-Your-Loved-One.jpg.webp",
+    "https://cdn2.stylecraze.com/wp-content/uploads/2019/03/A-Complete-History-Of-Lipsticks.jpg.webp"]
+
+    navElement.forEach(function (ele,i){
+      let navElement1=document.createElement("div");
+      navElement1.innerText=ele;
+      navElement1.addEventListener("click", function (){
+         moveBetweenPages(ele,i);
+      })
+      document.querySelector("#ele").append(navElement1);
+    })
+    topSection.forEach(function (ele){
+        let topSectionDiv=document.createElement("div");
+        let topSectionImg=document.createElement("img");
+        topSectionImg.src=ele;
+        topSectionDiv.append(topSectionImg);
+        document.querySelector("#homeTopSection").append(topSectionDiv);
+    })
+    function  moveBetweenPages(ele,i){
+        if(i==0){
+            window.location.href="makeUp.html";
+        }
+        if(i==1){
+            window.location.href="hairCare.html";
+        }
+        if(i==2){
+            window.location.href="skinCare.html";
+        }
+        if(i==3){
+            window.location.href="hairStyles.html";
+        }
+        if(i==6){
+            window.location.href="signIn.html";
+        }
+        if(i==7){
+            window.location.href="signUp.html";
+        }
+    }
+</script>
+</html>
