@@ -31,6 +31,42 @@ let makeUpTips=[
     }
 
 ]
+let hairStyleTips=[
+    {
+      image:"https://cdn2.stylecraze.com/wp-content/uploads/2015/06/40-Best-Ombre-Hair-Color-Ideas-And-Styles-To-Try-In-2022.jpg.webp",
+      text:"40 Best Ombre Hair Color Ideas And Styles To Try In",
+      name:"Arshiya Syeda"
+    },
+    {
+        image:"https://cdn2.stylecraze.com/wp-content/uploads/2015/06/5-Trendy-Hairstyles-For-Different-Face-Shapes.jpg.webp",
+        text:"5 Trendy Hairstyles For Different Face Shapes",
+        name:"Arshiya Syeda" 
+    },
+    {
+        image:"https://cdn2.stylecraze.com/wp-content/uploads/2015/06/50-Fabulous-Messy-Hairstyles-For-Women-To-Try.jpg.webp",
+        text:"50 Fabulous Messy Hairstyles For Women To Try",
+        name:"Anjali Sayee"
+    }
+
+]
+let healthTips=[
+    {
+      image:"https://cdn2.stylecraze.com/wp-content/uploads/2013/12/11-Best-Foods-To-Help-Children-Grow-Taller.jpg.webp",
+      text:"11 Best Foods To Help Children Grow Taller",
+      name:"Medically Reviewed by Reda Elmardi, RDN, RDN"
+    },
+    {
+        image:"https://cdn2.stylecraze.com/wp-content/uploads/2013/12/15-Arm-Workouts-Without-Weights-To-Lose-Arm-Fat-Fast-At-Home.jpg.webp",
+        text:"15 Arm Workouts Without Weights To Lose Arm Fat ",
+        name:"Medically Reviewed by Dr. Sudhansu Singh, BPT, BPT" 
+    },
+    {
+        image:"https://cdn2.stylecraze.com/wp-content/uploads/2021/11/Do-Home-Remedies-For-Carpal-Tunnel-Really-Have-Any-Effect.jpg.webp",
+        text:"Do Home Remedies For Carpal Tunnel Really Have",
+        name:"Sanchari Bhattacharya"
+    }
+
+]
 navElement.forEach(function (ele,i){
   let navElement1=document.createElement("div");
   navElement1.innerText=ele;
@@ -58,6 +94,28 @@ makeUpTips.forEach(function (ele){
     makeUpTipsName.innerText=ele.name;
     div.append(makeUpTipsImage,makeUpTipsText,makeUpTipsName);
     document.querySelector("#makeUpTips").append(div);
+})
+ hairStyleTips.forEach(function (ele){
+    let div=document.createElement("div");
+    let hairStyleTipsImage=document.createElement("img");
+    hairStyleTipsImage.src=ele.image;
+    let hairStyleTipsText=document.createElement("p");
+    hairStyleTipsText.innerText=ele.text;
+    let hairStyleTipsName=document.createElement("p");
+    hairStyleTipsName.innerText=ele.name;
+    div.append(hairStyleTipsImage,hairStyleTipsText,hairStyleTipsName);
+    document.querySelector("#hairStyleTips").append(div);
+})
+healthTips.forEach(function (ele){
+    let div=document.createElement("div");
+    let healthTipsImage=document.createElement("img");
+    healthTipsImage.src=ele.image;
+    let healthTipsText=document.createElement("p");
+    healthTipsText.innerText=ele.text;
+    let healthTipsName=document.createElement("p");
+    healthTipsName.innerText=ele.name;
+    div.append(healthTipsImage,healthTipsText,healthTipsName);
+    document.querySelector("#healthTips").append(div);
 })
 function  moveBetweenPages(ele,i){
     if(i==0){
