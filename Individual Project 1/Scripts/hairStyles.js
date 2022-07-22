@@ -6,20 +6,15 @@ function goToHomePage(){
 }
 function navHambur(){
     let navElements=document.querySelector("#ele");
-    let navImage=document.querySelector("#img>img");
-    // for(let i=0;i<navElements.length;i++){
-        if(navElements.style.display==="none"){
-        navElements.style.display="flex";
-        navImage.style.display="none";
-    } else{
-        navElements.style.display="none";
-        navImage.style.display="block";
-    }
-    
-    
-
-    
-}
+   let navImage=document.querySelector("#img>img");
+  if(navElements.style.display==="flex"){
+      navElements.style.display="none";
+       navImage.style.display="block";
+        } else{
+       navElements.style.display="flex";
+       navImage.style.display="none";
+      }
+   }
 navElement.forEach(function (ele,i){
   let navElement1=document.createElement("div");
   navElement1.innerText=ele;

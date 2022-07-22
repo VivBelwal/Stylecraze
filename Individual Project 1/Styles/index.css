@@ -137,8 +137,8 @@ width: 100%;
     background-color: #FFFFFF;
 }
 
-/* Make Up Section */
-#socialFollowing+div>h1{
+/* Make Up And Health and Wellness Section*/
+#socialFollowing+div>h1,#skinCareSection+div>h1{
     font-family: Poppins, Poppins-Hindi, sans-serif;
     font-size: 35px;
     font-weight: 500;
@@ -149,7 +149,7 @@ width: 100%;
     cursor: pointer;
     margin: 40px 0 40px 0;
 }
-#socialFollowing+div>h1::after{
+#socialFollowing+div>h1::after,#skinCareSection+div>h1::after{
     content: "";
     height: 2px;
     width: 100px;
@@ -162,7 +162,7 @@ width: 100%;
    margin: -150px auto;
 
 }
-#frenchMakeUp{
+#frenchMakeUp,#weightLoss,#wrapHairInScarf{
     display: flex;
     justify-content: space-between;
     height: 472.078px;
@@ -174,23 +174,23 @@ width: 100%;
     margin: auto;
     
 }
-#frenchMakeUp>img{
+#frenchMakeUp>img,#wrapHairInScarf>img,#weightLoss>img{
     height: 432.078px;
     width: 770px;
     cursor: pointer;
 
 }
-#frenchMakeUp>img:hover{
+#frenchMakeUp>img:hover,#wrapHairInScarf>img:hover,#weightLoss>img:hover{
 transition: 0.5s;
 opacity: 0.8;
 }
-#frenchMakeUp>div{
+#frenchMakeUp>div,#wrapHairInScarf>div,#weightLoss>div{
 
     height: 274px;
     width: 400px;
     padding: 0 15px 0 15px;
 }
-#frenchMakeUp>div>div:first-child>p{
+#frenchMakeUp>div>div:first-child>p,#wrapHairInScarf>div>div:first-child>p,#weightLoss>div>div:first-child>p{
     font-family: Poppins, Poppins-Hindi, sans-serif;
 font-size: 24px;
 font-weight: 700;
@@ -198,21 +198,21 @@ letter-spacing: 1.1px;
 line-height: 34px;
     cursor: pointer;
 }
-#frenchMakeUp>div>div:nth-child(2){
+#frenchMakeUp>div>div:nth-child(2),#wrapHairInScarf>div>div:nth-child(2),#weightLoss>div>div:nth-child(2){
     height: 180px;
     width: 370px;
     font-size: 18px;
    color:#333333 ; 
 line-height: 30px;
 }
-#frenchMakeUp>div>div:last-child{
+#frenchMakeUp>div>div:last-child,#wrapHairInScarf>div>div:last-child,#weightLoss>div>div:last-child{
     color: #FE5C75;
     cursor: pointer;
 }
-#frenchMakeUp>div>div:last-child:hover{
+#frenchMakeUp>div>div:last-child:hover,#wrapHairInScarf>div>div:last-child:hover,#weightLoss>div>div:last-child:hover{
 text-decoration: underline solid rgb(254,92,117);
 }
-#makeUpTips{
+#makeUpTips,#healthTips{
     display: flex;
     justify-content: space-between;
    margin-left: 50px;
@@ -220,22 +220,22 @@ text-decoration: underline solid rgb(254,92,117);
  width: 1200px;
 
 }
-#makeUpTips>div{
+#makeUpTips>div,#healthTips>div{
     height: 344.359px;
     width: 400px;
     padding: 0 15px 0 15px;
 }
 
-#makeUpTips>div>img{
+#makeUpTips>div>img,#healthTips>div>img{
     height: 226.359px;
     width: 370px;
     cursor: pointer;
 }
-#makeUpTips>div>img:hover{
+#makeUpTips>div>img:hover,#healthTips>div>img:hover{
     transition: 0.5s;
 opacity: 0.8;
 }
-#makeUpTips>div>p:nth-child(2){
+#makeUpTips>div>p:nth-child(2),#healthTips>div>p:nth-child(2){
     font-family: Poppins, Poppins-Hindi, sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -245,7 +245,7 @@ opacity: 0.8;
     height: auto;
     cursor: pointer;
 }
-#makeUpTips>div>p:nth-child(3){
+#makeUpTips>div>p:nth-child(3),#healthTips>div>p:nth-child(3){
     font-family: Poppins, Poppins-Hindi, sans-serif;
 font-size: 14px;
 line-height: 20px;
@@ -253,9 +253,11 @@ line-height: 20px;
     color: #FE5C75;
     cursor: pointer;
 }
-#makeUpTips>div>p:nth-child(3):hover{
+#makeUpTips>div>p:nth-child(3):hover,#healthTips>div>p:nth-child(3):hover{
     text-decoration: underline solid rgb(254,92,117);
 }
+
+/* Hair Care Section */
 #hairCareSection{
     width:100%;
     background-color: #fe5c74;
@@ -264,10 +266,11 @@ line-height: 20px;
 }
 #hairCareSection>div:first-child{
     
-height: 921.531px;
+
 width: 1170px;
 margin: 0 90px 0 90px;
 padding: 0 15px 0 15px;
+
 }
 #hairCareSection>div:first-child>p{
     font-family: Poppins, Poppins-Hindi, sans-serif;
@@ -288,14 +291,15 @@ color: #FFFFFF;
     bottom: 0;
     left: 0;
     right: 0;
-
-   margin: -1120px auto;
+    margin: -1120px auto;
+  
 }
 #hairCareSection>div:first-child>img{
     height: 386.625px;
 width: 667.5px;
 cursor: pointer;
 border-radius: 10px;
+
 }
 #hairCareSection>div:first-child>img:hover{
     transition: 0.5s;
@@ -307,12 +311,11 @@ width: 438.188px;
 margin: 0 0 0 -68px;
 padding: 30px 50px 30px 50px;
 position: relative;
-top: -372px;
-bottom: 0px;
-right: 0px;
-left: 670px;
+bottom:372px; 
+left: 685px;
 border-radius: 10px;
 background-color: #FFFFFF;
+
 }
 
 #hairCareSection>div:first-child>div>div:first-child{
@@ -336,8 +339,330 @@ text-decoration: none solid rgb(51, 51, 51);
     color: #FE5C75;
     cursor: pointer;
 }
-#hairCareSection>div:first-child>div>div:nth-child(3):hover{
+#hairCareSection>div:first-child>div>div:nth-child(3)>span:hover{
     text-decoration: underline solid rgb(254,92,117);
+}
+#hairCareSection>div:last-child{
+    display: flex;
+    height: 209.625px;
+width: 1200px;
+margin: 0 90px 0 90px;
+padding: 20px 0 20px 0;
+
+position: relative;
+top: -300px;
+
+}
+#hairCareSection>div:last-child>div{
+    display: flex;
+    height: 169.625px;
+width: 600px;
+padding: 0 15px 0 15px;
+
+}
+#hairCareSection>div:last-child>div>img{
+    height: 169.625px;
+width: 317.5px;
+border-radius: 10px;
+}
+#hairCareSection>div:last-child>div>div{
+    height: 100px;
+width: 292.5px;
+margin: 13px 0 0 -97px;
+padding: 0px 20px 40px 20px;
+
+border-radius: 10px;
+background-color: #FFFFFF;
+
+}
+#hairCareSection>div:last-child>div>div>p{
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+font-size: 21px;
+font-weight: 700;
+letter-spacing: 1.1px;
+line-height: 34px;
+}
+#hairCareSection>div:last-child>div:last-child>div{
+    height: 128px;
+width: 292.5px;
+margin: 0 0 0 -95px;
+padding: 0px 20px 40px 20px;
+
+}
+#hairCareSection>div:last-child>div:last-child>div>div:first-child{
+    height: 68px;
+    width: 292.5px;
+    
+}
+#hairCareSection>div:last-child>div:last-child>div>div:first-child>p{
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+font-size: 21px;
+font-weight: 700;
+letter-spacing: 1.1px;
+line-height: 34px;
+}
+#hairCareSection>div:last-child>div:last-child>div>div:last-child{
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+    
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 20px;
+ color:  #FE5C75;
+}
+
+/* Hair Style Section */
+
+#hairCareSection+div>h1{
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    line-height: 51px;
+    text-align: center;
+    color: #212121;
+    cursor: pointer;
+    margin: 40px 0 40px 0;
+}
+#hairCareSection+div>h1::after{
+    content: "";
+    height: 2px;
+    width: 100px;
+    background-color:#fe5c74 ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+   margin: -2090px auto;
+
+}
+
+
+#hairStyleTips{
+    display: flex;
+    justify-content: space-between;
+   margin-left: 50px;
+   
+ width: 1200px;
+
+}
+#hairStyleTips>div{
+    height: 344.359px;
+    width: 400px;
+    padding: 0 15px 0 15px;
+}
+
+#hairStyleTips>div>img{
+    height: 194.531;
+    width: 370px;
+    cursor: pointer;
+}
+#hairStyleTips>div>img:hover{
+    transition: 0.5s;
+opacity: 0.8;
+}
+#hairStyleTips>div>p:nth-child(2){
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    line-height: 34px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+#hairStyleTips>div>p:nth-child(3){
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+font-size: 14px;
+line-height: 20px;
+
+    color: #FE5C75;
+    cursor: pointer;
+}
+#hairStyleTips>div>p:nth-child(3):hover{
+    text-decoration: underline solid rgb(254,92,117);
+}
+ /* Skin Care Section */
+
+ #skinCareSection{
+    width:100%;
+    background-color: #fe5c74;
+    height: 921.531px;
+
+}
+#skinCareSection>div:first-child{
+    
+
+width: 1170px;
+margin: 0 90px 0 90px;
+padding: 0 15px 0 15px;
+
+}
+#skinCareSection>div:first-child>p{
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+font-size: 35px;
+font-weight: 500;
+letter-spacing: 1.1px;
+line-height: 51px;
+text-decoration: none solid rgb(255, 255, 255);
+text-align: center;
+color: #FFFFFF;
+}
+#skinCareSection>div:first-child>p::after{
+    content: "";
+    height: 2px;
+    width: 100px;
+    background-color:#FFFFFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: -3070px auto;
+  
+}
+#skinCareSection>div:first-child>img{
+    height: 386.625px;
+width: 667.5px;
+cursor: pointer;
+border-radius: 10px;
+
+}
+#skinCareSection>div:first-child>img:hover{
+    transition: 0.5s;
+    opacity: 0.8;
+}
+#skinCareSection>div:first-child>div{
+    height: 298px;
+width: 438.188px;
+margin: 0 0 0 -68px;
+padding: 30px 50px 30px 50px;
+position: relative;
+bottom:372px; 
+left: 685px;
+border-radius: 10px;
+background-color: #FFFFFF;
+
+}
+
+#skinCareSection>div:first-child>div>div:first-child{
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+font-size: 24px;
+font-weight: 700;
+letter-spacing: 1.1px;
+line-height: 34px;
+}
+#skinCareSection>div:first-child>div>div:nth-child(2){
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+font-size: 18px;
+line-height: 30px;
+text-decoration: none solid rgb(51, 51, 51);
+}
+#skinCareSection>div:first-child>div>div:nth-child(3){
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #FE5C75;
+    cursor: pointer;
+}
+#skinCareSection>div:first-child>div>div:nth-child(3)>span:hover{
+    text-decoration: underline solid rgb(254,92,117);
+}
+#skinCareSection>div:last-child{
+    display: flex;
+    height: 209.625px;
+width: 1200px;
+margin: 0 90px 0 90px;
+padding: 20px 0 20px 0;
+
+position: relative;
+top: -300px;
+
+}
+#skinCareSection>div:last-child>div{
+    display: flex;
+    height: 169.625px;
+width: 600px;
+padding: 0 15px 0 15px;
+
+}
+#skinCareSection>div:last-child>div>img{
+    height: 169.625px;
+width: 317.5px;
+
+border-radius: 10px;
+}
+#skinCareSection>div:last-child>div>div{
+    height: 140px;
+width: 292.5px;
+margin: 0px 0 0 -97px;
+padding: 0px 20px 40px 20px;
+
+border-radius: 10px;
+background-color: #FFFFFF;
+
+}
+#skinCareSection>div:last-child>div>div>div:first-child{
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+font-size: 21px;
+font-weight: 700;
+letter-spacing: 1.1px;
+line-height: 34px;
+}
+#skinCareSection>div:last-child>div>div>div:last-child{
+ color: #fe5c75;
+ font-family: Poppins, Poppins-Hindi, sans-serif;
+font-size: 14px;
+font-weight: 700;
+line-height: 20px;
+margin-top: -20px;
+}
+#skinCareSection>div:last-child>div>div>div:last-child>span:hover{
+    cursor: pointer;
+    text-decoration: underline solid rgb(254,92,117);
+}
+
+#skinCareSection>div:last-child>div:last-child>div{
+    height: 108px;
+width: 292.5px;
+margin: 12px 0 0 -95px;
+padding: 0px 20px 40px 20px;
+
+}
+#skinCareSection>div:last-child>div:last-child>div>div:first-child{
+    height: 68px;
+    width: 292.5px;
+    
+}
+#skinCareSection>div:last-child>div:last-child>div>div:first-child>p{
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+font-size: 21px;
+font-weight: 700;
+letter-spacing: 1.1px;
+line-height: 34px;
+}
+#skinCareSection>div:last-child>div:last-child>div>div:last-child{
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+    
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-top: 5px;
+ color:  #FE5C75;
+ cursor: pointer;
+ 
+}
+#skinCareSection>div:last-child>div:last-child>div>div:last-child>span:hover{
+    text-decoration: underline solid rgb(254,92,117);
+}
+#skinCareSection>div:last-child>div:first-child>img{
+    margin-top: 5px;
+}
+
+/* Health and WellNess Section */
+#skinCareSection+div>h1::after{
+    
 }
 
 
