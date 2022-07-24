@@ -7,7 +7,7 @@ body{
         height: 53.33px;
         position: sticky;
         top:0;
-        z-index: 1000;
+        z-index: 10;
         box-shadow: -1px 7px 20px -7px #afa2a2;
     }
     #container{
@@ -15,6 +15,7 @@ body{
        width: 90%;
         height: 50px;
         justify-content:center;
+    
         position: absolute;
        top: 0px;
        left: 88px;
@@ -61,12 +62,12 @@ body{
         font-weight: 500px;
         letter-spacing: 1px;
         line-height: 40px;
+        padding-bottom: 10px;
         padding-right: 10px;
         padding-left: 10px;
         
        
     }
-    
     #ele>div{
         display: block;
         border-right: 2px solid rgb(252, 67, 98);
@@ -76,10 +77,77 @@ body{
         color: #333;
         cursor: pointer;
     }
-    #ele>div:hover{
-          color:#FF5A78 ;
+    #ele>div:hover,#ele>div:hover>div{
+        display: inline-block;
+        color:#FF5A78 ;
+        
+  }
+    #ele>div>div{
+        display: none;
+        width: 180px;
+        height: 293px;
+        
+       
+        position: absolute;
+        top: 20px;
+       margin-left: -100px;
+        
+        z-index: 11;
+       padding-left: 0px;
+        
+        background-color:#ffffff;
     }
-
+    #ele>div>div>ul{
+        list-style: none;
+        text-align: start;
+        margin-left: 0px;
+        padding-top: -5px;
+        padding-bottom: 30px;
+      margin-left: -15px;
+      
+    }
+    #ele>div>div>ul>li{
+        font-family: Poppins, Poppins-Hindi, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: #757575;
+        line-height: 26px;
+        padding-bottom: 5px;
+      
+    }
+    #ele>div:nth-child(2)>div{
+        height: 360px;
+    }
+    #ele>div:nth-child(3)>div{
+        height: 480px;
+    }
+    #ele>div:nth-child(4)>div{
+        height: 520px;
+        margin-left: -130px;
+    }
+    #ele>div:nth-child(5)>div{
+        height: 360px;
+        margin-left: -200px;
+    }
+    #ele>div:nth-child(6)>div{
+        height: 360px;
+    }
+    #ele>div:nth-child(9)>div{
+        height: 200px;
+    }
+    #ele>div:nth-child(7)>div, #ele>div:nth-child(8)>div{
+        display: none;
+    }
+    
+    
+    #ele>div>div:hover{
+        display: inline-block;
+    }
+    #ele>div>div>ul>li:hover{
+        color:#FF5A78 ;
+        cursor: pointer;
+    }
     #toHomePage{
         font-family: sans-serif;
         font-size: 15px;
@@ -268,4 +336,84 @@ width: 370px;
       
   }
 
+  #footer{
+    display: flex;
+    height: 190px;
+width: 1349px;
+justify-content: space-around;
+color: #333333;
+margin-top: 30px;
+font-family: Poppins, Poppins-Hindi, sans-serif;
+
+}
+
+#follow>p{
+
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+#follow>div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 114px;
+width: 262.5px;
+margin-left: 60px;
+}
+#footer>div:nth-child(1)>p:hover,#footer>div:nth-child(2)>p:hover,#footer>div:nth-child(4)>p:hover{
+cursor: pointer;
+color: blue;
+text-decoration: underline;
+}
+#follow>div>div{
+    width:32px;
+    height: 32px;
+    background-color: #DEDFE1;
+}
+#follow>div>div>img{
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    margin-top: 8px;
+    cursor: pointer;
+}
+#follow>div>div:last-child{
+    margin-left: 90px;
+}
+#copyRight{
+    height: 80px;
+width: 1349px;
+background-color: #E6E6E6;
+color:  #333333;
+}
+
+#copyRight>p:first-child{
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+}
+#copyRight>p:first-child>span{
+    font-weight: 700;
+    color: #FE5C74;
+}
+#copyRight>p:last-child{
+    
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    width: 822px;
+    margin: auto;
+    text-align: center;
+}
+#copyRight>p:last-child>span{
+    color: #FE5C74;
+    cursor: pointer;
+    
+}
+#copyRight>p:last-child>span:hover{
+    text-decoration: underline;
+}
 

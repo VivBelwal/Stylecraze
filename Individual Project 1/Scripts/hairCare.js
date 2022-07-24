@@ -1,4 +1,16 @@
 let navElement=["MAKEUP","HAIR CARE","SKIN CARE", "HAIRSTYLES","HEALTH & WELLNESS","NEWS","SIGN IN","SIGN UP","ABOUT US"]
+let MAKEUPele=["BRIDAL MAKEUP","CELEBRITY MAKEUP","EYE MAKE UP","LIP MAKE UP","MAKEUP IDEAS","MEHANDI IDEAS","MEHANDI DESIGNS","NAIL ART"];
+let HAIRCAREele=["BASIC HAIR CARE","DANDRUFF","DRY HAIR CARE","HAIR CARE IDEAS","HAIR CARE SOLUTIONS","HAIR COLOUR","HAIR FALL","HAIR GROWTH","HAIR TREATMENT","OILY HAIR CARE"]
+let SKINCAREele=["ACNE","ANTI AGEING","BEAUTY SECRETS","DRY SKIN","FACE CARE TIPS","FACE PACKS AND MASKS","GLOWING SKIN","HOMEMADE TIPS","OILY SKIN","PERFUMES","SKIN CARE IDEAS","SKIN CARE PROBLEMS","SUNSCREEN"]
+let HAIRSTYLESele=["BOB HAIRSTYLES","BRAID HAIRSTYLES","BRIDAL HAIRSTYLES","BUN HAIRSTYLES","CELEBRITY HAIRSTYLES","CURLY HAIRSTYLES","DIFFERENT HAIRSTYLES","HAIRSTYLE TRENDS","LONG HAIRSTYLES","MEDIUM HAIRSTYLES","SHORT HAIRSTYLES","TEEN HAIRSTYLES"]
+let HEALTHele=["DIET TIPS","HEALTH DEVICES","HEALTHY FOOD","HOME REMEDIES","INGREDIENTS AND USES","NUTRITION","FITNESS","WEIGHT LOSS","WEIGHT GAIN","YOGA"]
+let NEWSele=["COLLABORATION","FASHION","BRAND NEWS","CELEBRITY NEWS","INSPIRATION","TOP 10'S","TRENDS","WOMEN EMPOWERMENT","RELATIONSHIPS","DISCOVER"]
+let ABOUTUSele=["OUR TEAM","EDITORIAL POLICY","MEDICAL REVIEW BOARD","EXPERT PANEL","CONTACT US"]
+
+
+
+
+
 let hairCareCategories=["Dry Hair Care", "Hair Care Solutions",  "Dandruff", "Hair Treatment", "Basic Hair Care", "Hair Fall","Hair Growth", "Hair Colour", "Hair Care Ideas"]
 let hairCareTips=[
     {
@@ -52,12 +64,7 @@ let otherHairCareTips=[
         text:"20 Amazing Dark Ombre Hair Color Ideas",
         name:"BY ARSHIYA SYEDA"
       }
-    
-      
-      
-    
-    
-]
+    ]
 document.querySelector(".hambur").addEventListener("click",navHambur);
 document.querySelector("#toHomePage>span").addEventListener("click",goToHomePage);
 function goToHomePage(){
@@ -74,14 +81,19 @@ function navHambur(){
         navImage.style.display="none";
        }
     }
-navElement.forEach(function (ele,i){
-  let navElement1=document.createElement("div");
-  navElement1.innerText=ele;
-  navElement1.addEventListener("click", function (){
-     moveBetweenPages(ele,i);
-  })
-  document.querySelector("#ele").append(navElement1);
-})
+    navElement.forEach(function (ele,i){
+      let navElement1=document.createElement("div");
+     
+      navElement1.innerText=ele;
+      navElement1.addEventListener("click", function (){
+         moveBetweenPages(ele,i);
+      })
+      let dropDownEle=document.createElement("div");
+      navElement1.append(dropDownEle);
+      let List=document.createElement("ul");
+      dropDownEle.append(List);
+      document.querySelector("#ele").append(navElement1);
+    })
 
 hairCareCategories.forEach(function (ele,i){
     
@@ -111,7 +123,41 @@ otherHairCareTips.forEach(function (ele){
     div.append(otherHairCareTipsImage,otherHairCareTipsText,otherHairCareTipsName);
     document.querySelector("#otherHairCareTips").append(div);
 })
-
+MAKEUPele.forEach(function(ele){
+  let makeUpListEle=document.createElement("li");
+  makeUpListEle.innerText=ele;
+  document.querySelector("#ele>div:nth-child(1)>div>ul").append(makeUpListEle)  ;
+})
+HAIRCAREele.forEach(function(ele){
+    let hairCareListEle=document.createElement("li");
+    hairCareListEle.innerText=ele;
+    document.querySelector("#ele>div:nth-child(2)>div>ul").append(hairCareListEle)  ;
+  })
+  SKINCAREele.forEach(function(ele){
+    let skinCareEle=document.createElement("li");
+    skinCareEle.innerText=ele;
+    document.querySelector("#ele>div:nth-child(3)>div>ul").append(skinCareEle)  ;
+  })
+  HAIRSTYLESele.forEach(function(ele){
+    let hairStylesEle=document.createElement("li");
+    hairStylesEle.innerText=ele;
+    document.querySelector("#ele>div:nth-child(4)>div>ul").append(hairStylesEle)  ;
+  })
+  HEALTHele.forEach(function(ele){
+    let healthEle=document.createElement("li");
+    healthEle.innerText=ele;
+    document.querySelector("#ele>div:nth-child(5)>div>ul").append(healthEle)  ;
+  })
+  NEWSele.forEach(function(ele){
+    let newsEle=document.createElement("li");
+    newsEle.innerText=ele;
+    document.querySelector("#ele>div:nth-child(6)>div>ul").append(newsEle)  ;
+  })
+  ABOUTUSele.forEach(function(ele){
+    let aboutEle=document.createElement("li");
+    aboutEle.innerText=ele;
+    document.querySelector("#ele>div:nth-child(9)>div>ul").append(aboutEle)  ;
+  })
 
 
 

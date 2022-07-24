@@ -2,8 +2,12 @@ body{
     margin: 0px;
    }
     #navShadow{
+        background-color: #ffffff;
         width: 100%;
         height: 53.33px;
+        position: sticky;
+        top:0;
+        z-index: 10;
         box-shadow: -1px 7px 20px -7px #afa2a2;
     }
     #container{
@@ -22,7 +26,7 @@ body{
         height: 33.33px;
         margin-top: 4px;
         margin-left:-55px ;
-    
+         cursor: pointer;
     }
     #img>img{
         width: 100%;
@@ -58,6 +62,7 @@ body{
         font-weight: 500px;
         letter-spacing: 1px;
         line-height: 40px;
+        padding-bottom: 10px;
         padding-right: 10px;
         padding-left: 10px;
         
@@ -70,7 +75,81 @@ body{
         padding-right: 10px;
         font: 17px Popins, Poppins-Hindi, sans-serif;
         color: #333;
+        cursor: pointer;
     }
+    #ele>div:hover,#ele>div:hover>div{
+        display: inline-block;
+        color:#FF5A78 ;
+        
+  }
+    #ele>div>div{
+        display: none;
+        width: 180px;
+        height: 293px;
+        
+       
+        position: absolute;
+        top: 20px;
+       margin-left: -100px;
+        
+        z-index: 11;
+       padding-left: 0px;
+        
+        background-color:#ffffff;
+    }
+    #ele>div>div>ul{
+        list-style: none;
+        text-align: start;
+        margin-left: 0px;
+        padding-top: -5px;
+        padding-bottom: 30px;
+      margin-left: -15px;
+      
+    }
+    #ele>div>div>ul>li{
+        font-family: Poppins, Poppins-Hindi, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: #757575;
+        line-height: 26px;
+        padding-bottom: 5px;
+      
+    }
+    #ele>div:nth-child(2)>div{
+        height: 360px;
+    }
+    #ele>div:nth-child(3)>div{
+        height: 480px;
+    }
+    #ele>div:nth-child(4)>div{
+        height: 520px;
+        margin-left: -130px;
+    }
+    #ele>div:nth-child(5)>div{
+        height: 360px;
+        margin-left: -200px;
+    }
+    #ele>div:nth-child(6)>div{
+        height: 360px;
+    }
+    #ele>div:nth-child(9)>div{
+        height: 200px;
+    }
+    #ele>div:nth-child(7)>div, #ele>div:nth-child(8)>div{
+        display: none;
+    }
+    
+    
+    #ele>div>div:hover{
+        display: inline-block;
+    }
+    #ele>div>div>ul>li:hover{
+        color:#FF5A78 ;
+        cursor: pointer;
+    }
+
+   
     #toHomePage{
         font-family: sans-serif;
         font-size: 15px;
@@ -80,7 +159,263 @@ body{
     }
     #toHomePage>span:first-child{
         color: #FF5A78;
+        cursor: pointer;
     }
     #toHomePage>span:last-child{
         color: #FF5A78;
+        cursor: pointer;
     }
+    #heading{
+        height: 51px;
+width: 1170px;
+margin: 32px 0 32px 0;
+color: #212121;
+
+margin-left: 86px;
+}
+    #heading{
+        font-family: sans-serif;
+font-size: 35px;
+font-weight: 500;
+letter-spacing: 1.1px;
+line-height: 51px;
+text-decoration: none solid rgb(33, 33, 33);
+text-align: center;
+
+    }
+    #heading::after{
+        content: "";
+        height: 2px;
+        width: 100px;
+        background-color: #fe5c74;
+        position: absolute;
+        top:165;
+        left: 0;
+        right: 0;
+        margin: auto;
+   
+    }
+    #hairStylesCategories{
+        
+    height: 138px;
+    width: 1170px;
+    margin: 10px 0 10px 86px;
+    
+    }
+    #hairStylesCategories>button{
+        height: 54px;
+width: 165px;
+border: 2px solid  #FE5C74;
+margin: 0 15px 15px 0;
+padding: 10px 0 10px 0;
+font-family: sans-serif;
+font-size: 15px;
+line-height: 30px;
+background-color: #ffffff;
+text-align: center;
+border-radius: 5px;
+color:  #333333;
+cursor: pointer;
+    }
+    #hairStylesCategories>button:hover{
+        background-color:  #FE5C74;
+        color: #ffffff;
+    }
+    #ponyTail,#curlyHairstyles{
+        display: flex;
+       
+        height: 767.812px;
+        width: 1170px;
+        margin: 0 0 45px 86px;
+        background-color: #F9F9F9;
+        color: #333333;
+       
+    }
+    #ponyTail>img:hover,#curlyHairstyles>img:hover{
+    transition: 0.5s;
+    opacity: 0.8;
+    cursor: pointer;
+    }
+    #ponyTail>div,#curlyHairstyles>div{
+        height: 290.156px;
+        width: 487.5px;
+        margin-top: 235px;
+        padding: 0 60px 0 60px;
+        text-align: center;
+       
+        font-family: Poppins, Poppins-Hindi, sans-serif;
+    }
+    #ponyTail>div>div:first-child,#curlyHairstyles>div>div:first-child{
+        height: 68px;
+        width: 367.5px;
+        margin: 16px 0 16px 0;
+       
+           font-size: 24px;
+        line-height: 34px;
+        cursor: pointer;
+    }
+    #ponyTail>div>div:last-child,#curlyHairstyles>div>div:last-child{
+      height:   180px;
+      width: 367.5px;
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    #name1{
+        font-family: Poppins, Poppins-Hindi, sans-serif;
+        font-size: 14px;
+        position:relative;
+        top:-150px;
+        left: 800px;
+       line-height: 20px;
+      color:#757575;
+    }
+    #name1>span:hover{
+        cursor: pointer;
+    text-decoration: underline;
+    }
+    #hairStyleTips{
+        display: flex;
+        height: 581.406px;
+        width: 1200px;
+        
+        margin-left: 86px;
+    }
+    #hairStyleTips>div,#otherHairStyleTips>div{
+        height: 536.406px;
+        width: 400px;
+        margin: 0 0 45px 0;
+        padding: 0 15px 0 15px;
+        font-family: Poppins, Poppins-Hindi, sans-serif;
+    }
+    #hairStyleTips>div>img, #otherHairStyleTips>div>img{
+      
+        height: 416.25px;
+width: 370px;
+    }
+    #hairStyleTips>div>img:hover, #otherHairStyleTips>div>img:hover{
+        cursor: pointer;
+        transition: 0.5s;
+    opacity: 0.8;
+    
+        
+    }
+    #hairStyleTips>div>p:nth-child(2), #otherHairStyleTips>div>p:nth-child(2){
+        font-size: 24px;
+         font-weight: 100;
+          line-height: 34px;
+     text-align: center;
+     color: #333333;
+     cursor: pointer;
+    }
+    #hairStyleTips>div>p:nth-child(3), #otherHairStyleTips>div>p:nth-child(3){
+        font-size: 14px;
+        line-height: 20px;
+        color: #757575;
+        cursor: pointer;
+    }
+    #name2{
+        font-size: 14px;
+        position:relative;
+        top:-150px;
+        left:100px;
+       line-height: 20px;
+      color:#757575;
+    }
+    #name2>span:hover{
+        cursor: pointer;
+    text-decoration: underline;
+    }
+  #otherHairStyleTips{
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(3,400px);
+    row-gap: 40px;
+    column-gap: 10px;
+    margin-left: 60px;
+    text-align: justify;
+       width: 1200px;
+      
+  }
+
+  #footer{
+    display: flex;
+    height: 190px;
+width: 1349px;
+justify-content: space-around;
+color: #333333;
+margin-top: 30px;
+font-family: Poppins, Poppins-Hindi, sans-serif;
+
+}
+
+#follow>p{
+
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+#follow>div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 114px;
+width: 262.5px;
+margin-left: 60px;
+}
+#footer>div:nth-child(1)>p:hover,#footer>div:nth-child(2)>p:hover,#footer>div:nth-child(4)>p:hover{
+cursor: pointer;
+color: blue;
+text-decoration: underline;
+}
+#follow>div>div{
+    width:32px;
+    height: 32px;
+    background-color: #DEDFE1;
+}
+#follow>div>div>img{
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    margin-top: 8px;
+    cursor: pointer;
+}
+#follow>div>div:last-child{
+    margin-left: 90px;
+}
+#copyRight{
+    height: 80px;
+width: 1349px;
+background-color: #E6E6E6;
+color:  #333333;
+}
+
+#copyRight>p:first-child{
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+}
+#copyRight>p:first-child>span{
+    font-weight: 700;
+    color: #FE5C74;
+}
+#copyRight>p:last-child{
+    
+    font-family: Poppins, Poppins-Hindi, sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    width: 822px;
+    margin: auto;
+    text-align: center;
+}
+#copyRight>p:last-child>span{
+    color: #FE5C74;
+    cursor: pointer;
+    
+}
+#copyRight>p:last-child>span:hover{
+    text-decoration: underline;
+}
+

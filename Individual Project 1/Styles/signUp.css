@@ -148,8 +148,6 @@ body{
         color:#FF5A78 ;
         cursor: pointer;
     }
-
-   
     #toHomePage{
         font-family: sans-serif;
         font-size: 15px;
@@ -165,180 +163,74 @@ body{
         color: #FF5A78;
         cursor: pointer;
     }
-    #heading{
-        height: 51px;
-width: 1170px;
-margin: 32px 0 32px 0;
-color: #212121;
 
-margin-left: 86px;
-}
-    #heading{
-        font-family: sans-serif;
-font-size: 35px;
-font-weight: 500;
-letter-spacing: 1.1px;
-line-height: 51px;
-text-decoration: none solid rgb(33, 33, 33);
-text-align: center;
-
-    }
-    #heading::after{
-        content: "";
-        height: 2px;
-        width: 100px;
-        background-color: #fe5c74;
-        position: absolute;
-        top:165;
-        left: 0;
-        right: 0;
-        margin: auto;
+   #signUpForm{
+    height: 550px;
+width: 700px;
+margin: auto;
+   }
+   #signUpForm>div:first-child{
+    height: 60px;
+    width: 700px;
+    margin: 20px 0 20px 0;
    
-    }
-    #makeUpCategories{
-        
-    height: 138px;
-    width: 1170px;
-    margin: 10px 0 10px 86px;
-    
-    }
-    #makeUpCategories>button{
-        height: 54px;
-width: 165px;
-border: 2px solid  #FE5C74;
-margin: 0 15px 15px 0;
-padding: 10px 0 10px 0;
-font-family: sans-serif;
-font-size: 15px;
+   } 
+   #signUpForm>div:first-child>p{
+    font-family: Poppins, sans-serif;
+font-size: 18px;
+font-weight: 500;
 line-height: 30px;
-background-color: #ffffff;
 text-align: center;
-border-radius: 5px;
-color:  #333333;
-cursor: pointer;
-    }
-    #makeUpCategories>button:hover{
-        background-color:  #FE5C74;
-        color: #ffffff;
-    }
-    #bridalMakeUp,#bridalMakeupPackages{
-        display: flex;
-       
-        height: 767.812px;
-        width: 1170px;
-        margin: 0 0 45px 86px;
-        background-color: #F9F9F9;
-        color: #333333;
-       
-    }
-    #bridalMakeUp>img:hover,#bridalMakeupPackages>img:hover{
-    transition: 0.5s;
-    opacity: 0.8;
-    cursor: pointer;
-    }
-    #bridalMakeUp>div,#bridalMakeupPackages>div{
-        height: 290.156px;
-        width: 487.5px;
-        margin-top: 235px;
-        padding: 0 60px 0 60px;
-        text-align: center;
-       
-        font-family: Poppins, Poppins-Hindi, sans-serif;
-    }
-    #bridalMakeUp>div>div:first-child,#bridalMakeupPackages>div>div:first-child{
-        height: 68px;
-        width: 367.5px;
-        margin: 16px 0 16px 0;
-       
-           font-size: 24px;
-        line-height: 34px;
-        cursor: pointer;
-    }
-    #bridalMakeUp>div>div:last-child,#bridalMakeupPackages>div>div:last-child{
-      height:   180px;
-      width: 367.5px;
-      margin: 0 0 10px 0;
-      font-size: 18px;
-      line-height: 30px;
-    }
-    #name1{
-        font-family: Poppins, Poppins-Hindi, sans-serif;
-        font-size: 14px;
-        position:relative;
-        top:-150px;
-        left: 800px;
-       line-height: 20px;
-      color:#757575;
-    }
-    #name1>span:hover{
-        cursor: pointer;
-    text-decoration: underline;
-    }
-    #makeUpTips{
-        display: flex;
-        height: 581.406px;
-        width: 1200px;
-        
-        margin-left: 86px;
-    }
-    #makeUpTips>div,#otherMakeUpTips>div{
-        height: 536.406px;
-        width: 400px;
-        margin: 0 0 45px 0;
-        padding: 0 15px 0 15px;
-        font-family: Poppins, Poppins-Hindi, sans-serif;
-    }
-    #makeUpTips>div>img, #otherMakeUpTips>div>img{
-      
-        height: 416.25px;
-width: 370px;
-    }
-    #makeUpTips>div>img:hover, #otherMakeUpTips>div>img:hover{
-        cursor: pointer;
-        transition: 0.5s;
-    opacity: 0.8;
+   }
+   #signUpForm>div:last-child{
+    height: 470px;
+    width: 400px;
+    margin: 0 150px 0 150px;
     
-        
-    }
-    #makeUpTips>div>p:nth-child(2), #otherMakeUpTips>div>p:nth-child(2){
-        font-size: 24px;
-         font-weight: 100;
-          line-height: 34px;
-     text-align: center;
-     color: #333333;
-     cursor: pointer;
-    }
-    #makeUpTips>div>p:nth-child(3), #otherMakeUpTips>div>p:nth-child(3){
-        font-size: 14px;
-        line-height: 20px;
-        color: #757575;
-        cursor: pointer;
-    }
-    #name2{
-        font-size: 14px;
-        position:relative;
-        top:-150px;
-        left:100px;
-       line-height: 20px;
-      color:#757575;
-    }
-    #name2>span:hover{
-        cursor: pointer;
-    text-decoration: underline;
-    }
-  #otherMakeUpTips{
-    display: grid;
-    overflow: hidden;
-    grid-template-columns: repeat(3,400px);
-    row-gap: 40px;
-    column-gap: 10px;
-    margin-left: 60px;
-    text-align: justify;
-       width: 1200px;
-      
-  }
+   }
+   form{
+    font-family: Poppins, sans-serif;
+font-size: 16px;
+line-height: 20px;
 
-  #footer{
+
+   }
+   form input{
+    height: 45px;
+width: 400px;
+margin-bottom: 20px;
+border: 1px solid  #CCCCCC;
+padding: 10px 12px 10px 12px;
+border-radius: 4px;
+box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px 0px inset;
+border: top left 4px;
+   }
+   #Specialization,#Experience{
+    height: 45px;
+    width: 400px;
+    border: 1px solid  #CCCCCC;
+    padding: 6px 12px 6px 12px;
+    margin-bottom: 20px;
+   }
+   input[type="submit"]{
+    background-color: #FE5C75;
+    color: white;
+    border-radius: 3px;
+   }
+   input[type="submit"]:hover{
+    background-color: #69202b;
+    cursor: pointer;
+   }
+   #signIn{
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+
+   }
+   span{
+    color: #FE5C75;
+   }
+
+   #footer{
     display: flex;
     height: 190px;
 width: 1349px;
@@ -418,4 +310,6 @@ text-align: center;
 #copyRight>p:last-child>span:hover{
     text-decoration: underline;
 }
+
+
 
