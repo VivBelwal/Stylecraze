@@ -53,40 +53,38 @@ This project was built in 5 Days.
 
 ---
 
-![Home]()
+![Home](https://raw.githubusercontent.com/VivBelwal/Stylecraze/main/Individual%20Project%201/Images/Home.png)
 
 <br/>
 
-![Login]()
-
-<br/>
-<br/>
-![Signup]()
+![Login](https://raw.githubusercontent.com/VivBelwal/Stylecraze/main/Individual%20Project%201/Images/Login.png)
 
 <br/>
 <br/>
 
-![Make Up Page]()
+![Signup](https://raw.githubusercontent.com/VivBelwal/Stylecraze/main/Individual%20Project%201/Images/Signup.png)
 
 <br/>
 <br/>
 
-![Skin Care Page]()
+![Make Up Page](https://raw.githubusercontent.com/VivBelwal/Stylecraze/main/Individual%20Project%201/Images/makeup.png)
 
 <br/>
 <br/>
 
-![Hair Styles Page]()
+![Skin Care Page](https://raw.githubusercontent.com/VivBelwal/Stylecraze/main/Individual%20Project%201/Images/skincare.png)
 
 <br/>
 <br/>
 
-![ Hair Care Page]()
+![Hair Styles Page](https://raw.githubusercontent.com/VivBelwal/Stylecraze/main/Individual%20Project%201/Images/hair-style.png)
 
 <br/>
 <br/>
-![ Footer]()
+
+![ Hair Care Page](https://raw.githubusercontent.com/VivBelwal/Stylecraze/main/Individual%20Project%201/Images/haircare.png)
 
 <br/>
 <br/>
+
 
