@@ -80,23 +80,23 @@ MAKE UP
 <br/>
 <br/>
 
-SKIN CARE PAGE
-
-![Skin Care Page]()
-
-<br/>
-<br/>
-
-HAIR STYLES PAGE
-
-![Hair Styles Page](https://raw.githubusercontent.com/VivBelwal/Stylecraze/main/Individual%20Project%201/Images/skincare.png)
-
-<br/>
-<br/>
-
 HAIR CARE PAGE
 
-![ Hair Care Page](https://raw.githubusercontent.com/VivBelwal/Stylecraze/main/Individual%20Project%201/Images/hair-care.png)
+![Hair Care Page](https://raw.githubusercontent.com/VivBelwal/Stylecraze/main/Individual%20Project%201/Images/haircare.png)
+
+<br/>
+<br/>
+
+Skin CARE  PAGE
+
+![Skin Care Page](https://raw.githubusercontent.com/VivBelwal/Stylecraze/main/Individual%20Project%201/Images/skincare.png)
+
+<br/>
+<br/>
+
+HAIR STYLE PAGE
+
+![ Hair Style Page](https://raw.githubusercontent.com/VivBelwal/Stylecraze/main/Individual%20Project%201/Images/hair-care.png)
 
 <br/>
 <br/>
